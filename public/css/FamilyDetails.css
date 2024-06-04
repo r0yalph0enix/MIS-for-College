@@ -1,0 +1,195 @@
+/* Common styles for all screen sizes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark text */
+  position: sticky;
+  overflow: hidden; /* Remove scroll from the body */
+}
+
+header {
+  background-color: #3f51b5; /* Indigo header */
+  color: #fff; /* White text */
+  padding: 2px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+  z-index: 2;
+}
+.mandatory{
+  color: red;
+}
+
+.error-message {
+  font-size: 12px; /* Set the font size */
+  color: red; /* Set the text color to red */
+  
+}
+
+.logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+.college-info {
+  margin-left: 10px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.college-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.college-info p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #ccc; /* Light gray text */
+}
+
+body {
+  background: url('{{ asset("img/blur_tu.png") }}') no-repeat;
+  background-attachment: fixed; /* Ensure background remains fixed */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  color: #333;
+  height: 100vh;
+}
+
+.containerfam {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container{
+  max-width: 600px;
+  margin: auto; /* Center horizontally */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  padding:  20px 20px; /* Add padding to the top */
+
+  
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-containerfam {
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin: 70px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headingfam {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rowfam {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-boxfam {
+  flex-basis: 48%; /* Adjust width for two-column layout */
+  margin-bottom: 10px;
+}
+
+.input-boxfam:last-child {
+  margin-right: 0;
+}
+
+.input-boxfam label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-boxfam input[type="text"] {
+  width: 100%;
+  height: 35px;
+  padding: 0 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.input-boxfam input[type="text"]:focus {
+  border-color: #9b59b6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.back-button,
+.next-button {
+  text-decoration: none;
+  text-align: center;
+  background-color: #61c5ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #bdd62f;
+}
+
+.next-button:hover {
+  background-color: #3bff76;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  
+  
+  
+  .box-containerfam {
+    padding: 30px; /* Increase padding */
+    margin: 50px auto; /* Adjust margin */
+    min-width: 300px; /* Set minimum width */
+  }
+  .button-container {
+    flex-direction: row; /* Make the buttons display side by side */
+    justify-content: center; /* Center the buttons horizontally */
+  }
+
+  .back-button,
+  .next-button {
+    margin: 0 5px; /* Add some spacing between the buttons */
+  }
+}

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+.college-info {
+    margin-left: 10px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.college-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.college-info p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.background-section {
+    background-image: url('/img/tu.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    font-size: 14px;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.main-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cta-button {
+    margin-top: 20px;
+    background-color: #61c5ff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #3bff76;
+}
+
+.login-box a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+.drpdown{
+    background:#3f51b5 ;
+}
+.login-box a.signup:hover {
+    background-color: #3bff76;
+}
+
+.login-box a.login {
+    background-color: #3f51b5;
+}
+
+.login-box a.login:hover {
+    background-color: #61c5ff;
+}
+
+footer {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 5px 12px; /* Adjusted padding to decrease height */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ff6f61;
+}
+
+.footer-column {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.footer-section .text-sizes{
+    font-size: 23px;
+    font-weight: bold;
+    color: #faf8f8;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section .footer-column {
+    margin-right: 20px;
+}
+
+.footer-section .footer-column:last-child {
+    margin-right: 0;
+}
+/* dropdown */
+.paste-button {
+    position: relative;
+    display: block;
+    margin-right: 10px;
+  }
+  
+  .button {
+    background-color:  #3f51b5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color:white;
+    border: 2px solid  #3f51b5;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: #4CAF50;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:  #3f51b5;
+    color: white;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  }
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  
+  .login-buttons {
+    display: flex;
+    justify-content: space-between; /* Ensure buttons are evenly spaced */
+    align-items: center; /* Center items vertically */
+}
+
+.login-buttons .login-box {
+    margin-left: 20px; /* Add margin between buttons */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .college-info h1 {
+        font-size: 1.2rem;
+    }
+
+    .college-info p {
+        font-size: 0.7rem;
+    }
+
+    .background-section {
+        height: calc(100vh - 50px);
+        background-size: cover;
+    }
+
+    .main-content {
+        font-size: 12px;
+    }
+   
+    .cta-button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+   
+
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section .footer-column {
+        margin: 10px 0;
+    }
+
+    .footer-section .footer-column:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+}

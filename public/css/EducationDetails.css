@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.grade-list {
+  display: none;
+}
+
+.mandatory{
+  color: red;
+}
+
+.custom-select-box {
+  position: relative;
+  width: 100%;
+}
+
+.custom-select-box select {
+  width: 100%;
+  height: 100%;
+
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjusted background position */
+  cursor: pointer;
+}
+
+.custom-select-box select:focus + .error-message {
+  display: none;
+}
+headeredu {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Stick to the top */
+  top: 0; /* Position at the top */
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays above other content */
+}
+
+.error-message {
+  font-size: 12px; /* Set the font size */
+  color: red; /* Set the text color to red */
+  
+}
+.logo img {
+max-width: 50px;
+height: auto;
+}
+
+.college-info {
+margin-left: 10px;
+text-align: left;
+flex-grow: 1;
+}
+.college-info h1 {
+font-size: 1.5rem;
+margin-bottom: 0;
+color: #fff; /* White text */
+font-weight: bold;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.college-info p {
+font-size: 0.8rem;
+margin-top: 5px;
+color: #ccc; /* Light gray text */
+}
+body {
+/* background: url('{{ asset("img/blur_tu.png") }}') no-repeat; */
+color: #333;
+margin: 0;
+padding: 0;
+position: relative;
+  overflow: auto;
+  
+
+
+}
+
+
+.containeredu {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+}
+
+
+.headeredu {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  
+  font-weight: bold;
+
+  
+
+
+padding-bottom: 1px;
+}
+
+.box-containeredu {
+  background-color: #f9f9f9;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: auto;
+  
+}
+
+
+.grade-dropdown {
+  position: relative;
+display: relative;
+}
+
+.grade-arrow {
+  cursor: pointer;
+}
+.grade-list {
+  position: absolute;
+  background-color: #fff; /* Change background color as needed */
+  min-width: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  display: none;
+}
+
+.grade-list-item {
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc; /* Add a border between items */
+}
+
+.grade-list-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.grade-list-item:hover {
+  background-color: #f0f0f0; /* Change hover background color as needed */
+}
+
+.show {
+display: flex;
+}
+
+
+.input-groupedu {
+  position: relative;
+}
+
+.grade-arrow {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: url('{{ asset("img/blur_tu.png") }}') no-repeat; */
+  background-attachment: fixed; /* Ensure background remains fixed */
+  color: #333;
+  margin: 0;
+  padding: 0;
+display: relative;
+  height: 100vh;
+}
+
+
+
+headeredu {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50px;
+  height: auto;
+}
+.containeredu {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+    overflow: hidden; /* Remove scroll from the body */
+  
+  
+
+.box-containeredu {
+  background-color: #f9f9f9;
+  margin: 40px auto;
+  padding: 10px;
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.rowedu {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-boxedu {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-box:last-child {
+  margin-right: 0;
+}
+
+.input-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-boxedu input[type="text"],
+.input-boxedu input[type="emailreg"],
+.input-boxedu input[type="dobreg"],
+.input-boxedu input[type="file"],
+.input-boxedu input[type="radio"] {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.input-boxedu input[type="text"]:focus,
+.input-boxedu input[type="email"]:focus,
+.input-boxedu input[type="file"]:focus {
+  border-color: #9b59b6;
+}
+
+.certificate-table {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.file-upload input[type="file"] {
+  width: auto;
+}
+
+.button-containeredu {
+display: flex;
+margin-top: 25px;
+justify-content: space-between;
+}
+
+
+.back-button{
+text-decoration: none;
+text-align: center;
+align-items: left;
+background-color: #61c5ff;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 10px;
+transition: background-color 0.3s;
+}
+.next-button {
+font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #61c5ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.back-button:hover{
+background-color: #bdd62f;
+}
+
+.next-button:hover {
+  background-color: #3bff76;
+}
+}

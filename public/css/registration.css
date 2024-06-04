@@ -1,0 +1,332 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark text */
+  position:sticky;
+ 
+    overflow: hidden; /* Remove scroll from the body */
+ 
+    .input-boxregistration {
+      position: relative;
+      margin-bottom: 8px;
+}
+   .mandatory{
+  color: red;
+}
+
+.custom-select-box {
+position: relative;
+width: 100%;
+}
+
+.custom-select-box select {
+width: 100%;
+height: 100%;
+
+padding: 10px 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: white;
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+background-repeat: no-repeat;
+background-position: right 10px center; /* Adjusted background position */
+cursor: pointer;
+}
+
+.custom-select-box select:focus + .error-message {
+display: none;
+}
+
+
+.error-message {
+  font-size: 12px; /* Set the font size */
+  color: red; /* Set the text color to red */
+}
+.error-input {
+  border: 2px solid red; /* Set border to red */
+}
+.error-select {
+  border: 2px solid red; /* Set border to red */
+}s
+header {
+  background-color: #3f51b5; /* Indigo header */
+  color: #fff; /* White text */
+  padding: 2px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed ;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo img {
+  max-width: 50px;
+  height: auto;
+}
+
+.college-info {
+  margin-left: 10px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.college-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.college-info p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #ccc; /* Light gray text */
+}
+
+body {
+  background: url('{{ asset("img/blur_tu.png") }}') no-repeat;
+  background-attachment: fixed; /* Ensure background remains fixed */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  /* background-color: #f5f5f5; */
+  color: #333;
+  height: 100vh;
+  position: sticky;
+
+    overflow: hidden; /* Remove scroll from the body */
+  
+  
+}
+
+.containerregistration {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+    overflow: hidden; /* Remove scroll from the body */
+  
+  
+}
+.containerregistration {
+  max-width: 600px;
+  margin: auto; /* Center horizontally */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  padding:  20px 20px; /* Add padding to the top */
+}
+
+.headingregistration {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-containerregistration {
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin: 70px auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rowregistration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.input-boxregistration {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-boxregistration:last-child {
+  margin-right: 0;
+}
+
+.input-boxregistration label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-boxregistration input[type="text"],
+
+.input-boxregistration input[type="file"]
+ {
+  width: 102%;
+  height: 35px;
+  padding: 0 -50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+.input-boxregistration input[type="emailreg"],
+.input-boxregistration .dob-containerreg input[type="dobreg"]
+{
+  width: 60%;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.input-boxregistration input[type="text"]:focus,
+.input-boxregistration .dob-containerreg input[type="dobreg"]:focus,
+.input-boxregistration input[type="emailreg"]:focus,
+.input-boxregistration input[type="file"]:focus
+ {
+  border-color: #9b59b6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  text-decoration: none;
+  background-color: #61c5ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button {
+  text-decoration: none;
+  background-color: #61c5ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  float: right; /* Align button to the right */
+}
+
+.back-button:hover {
+  background-color: #bdd62f;
+}
+
+.next-button:hover {
+  background-color: #3bff76;
+}
+.dob-containerreg {
+  position: relative;
+  
+}
+
+.input-boxregistration .dob-containerreg .calendar-icon {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.datepicker {
+ 
+  position: absolute; /* Temporarily set position to fixed */
+  height: 3px;
+}
+
+.photo-upload-container {
+  display: inline-block;
+  align-items: center;
+}
+
+.photo-upload-container input[type="file"] {
+  display: none;
+}
+
+.photo-upload-container label {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photo-upload-container label:hover {
+  background-color: #f0f0f0;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .containerregistration {
+    
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      height: 100vh; /* Set height to full viewport height */
+    }
+
+  .input-boxregistration {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back-button,
+  .next-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headingregistration {
+    font-size: 20px;
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .box-containerregistration {
+    padding: 30px; /* Increase padding */
+    margin: 50px auto; /* Adjust margin */
+    min-width: 300px; /* Set minimum width */
+  }
+
+  .input-boxregistration {
+    flex: 1 1 100%; /* Make the input box flexible */
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .input-boxregistration:last-child {
+    margin-right: 0;
+  }
+
+  .back-button,
+  .next-button {
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+}
